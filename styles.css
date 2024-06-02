@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    transition: background-color 0.5s; 
+    background-color: #ec4545; 
+    background: url('backgroundimagetry.jpg') center/cover no-repeat fixed; 
+}
+header {
+    background-color: #790006;
+    padding: 20px 0;
+    text-align: center;
+    color: #ecf0f1;
+}
+nav {
+    background-color: #A40000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f08576;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #f8fafc;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #CA0000;
+    padding: 10px 0;
+    text-align: center;
+    color: #ecf0f1;
+}
+.team-member {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+}
+
+.team-member p {
+    color: #7f8c8d;
+}
+.image-placeholder {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.editable-text {
+    color: #2c3e50;
+}
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+}
+
+.feature-list p {
+    line-height: 1.6;
+}
+.section-divider {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+.image-popup img {
+    max-width: 300px; 
+    height: auto; 
+}
+.feature-list img {
+    width: 300px; 
+    height: auto; 
+}
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#chatbot-btn {
+    background-color: #CA0000; 
+    color: #ecf0f1;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#chatbox {
+    display: none;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #CA0000; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    color: #ecf0f1;
+}
+
+#chatbox p {
+    margin: 10px 0;
+}
+.typing-animation:after {
+    content: "|";
+    display: inline-block;
+    animation: typing 2s steps(20, end) infinite;
+}
+
+@keyframes typing {
+    from, to {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+#chatbox button {
+    background-color: #f85c5c;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chatbox button:hover {
+    background-color: #e74c3c;
+}
+.logo-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #CA0000; 
+    border-radius: 50%;
+    background-image: url('questions3.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logo-btn:hover {
+    background-color: #e74c3c; 
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeOut 5s forwards; 
+}
+
+.circle {
+    width: 50px; 
+    height: 50px; 
+    background-color: #ec4545; 
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
